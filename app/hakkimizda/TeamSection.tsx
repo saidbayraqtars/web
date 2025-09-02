@@ -30,7 +30,7 @@ export default function TeamSection() {
   ];
 
   const handleCall = () => {
-    window.open('tel:+905551234567', '_self');
+    window.open('tel:+905350786101', '_self');
   };
 
   return (

@@ -1,48 +1,35 @@
+
 'use client';
 
 export default function FloatingButtons() {
   const handleCall = () => {
-    window.open('tel:+905551234567', '_self');
+    window.open('tel:+905350786101', '_self');
   };
 
   const handleWhatsApp = () => {
-    window.open('https://wa.me/905551234567?text=Merhaba, hizmetleriniz hakkında bilgi almak istiyorum.', '_blank');
-  };
-
-  const handleQuote = () => {
-    window.location.href = '/iletisim';
+    window.open('https://wa.me/905350786101?text=Merhaba, hizmetleriniz hakkında bilgi almak istiyorum.', '_blank');
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col space-y-3">
+    <div className="fixed bottom-4 md:bottom-6 right-4 md:right-6 z-50 flex flex-col space-y-3 md:space-y-4">
       <button
         onClick={handleCall}
-        className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center space-x-2 whitespace-nowrap cursor-pointer"
+        className="bg-blue-600 hover:bg-blue-700 text-white px-4 md:px-8 py-3 md:py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center space-x-2 md:space-x-3 whitespace-nowrap cursor-pointer"
       >
-        <div className="w-5 h-5 flex items-center justify-center">
-          <i className="ri-phone-fill text-lg"></i>
+        <div className="w-5 h-5 md:w-6 md:h-6 flex items-center justify-center">
+          <i className="ri-phone-fill text-lg md:text-xl"></i>
         </div>
-        <span className="font-semibold">Hemen Ara</span>
+        <span className="font-semibold text-sm md:text-lg">Hemen Ara</span>
       </button>
 
       <button
         onClick={handleWhatsApp}
-        className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center space-x-2 whitespace-nowrap cursor-pointer"
+        className="bg-green-500 hover:bg-green-600 text-white px-4 md:px-8 py-3 md:py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center space-x-2 md:space-x-3 whitespace-nowrap cursor-pointer"
       >
-        <div className="w-5 h-5 flex items-center justify-center">
-          <i className="ri-whatsapp-fill text-lg"></i>
+        <div className="w-5 h-5 md:w-6 md:h-6 flex items-center justify-center">
+          <i className="ri-whatsapp-fill text-lg md:text-xl"></i>
         </div>
-        <span className="font-semibold">WhatsApp</span>
-      </button>
-
-      <button
-        onClick={handleQuote}
-        className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center space-x-2 whitespace-nowrap cursor-pointer"
-      >
-        <div className="w-5 h-5 flex items-center justify-center">
-          <i className="ri-file-text-fill text-lg"></i>
-        </div>
-        <span className="font-semibold">Teklif Al</span>
+        <span className="font-semibold text-sm md:text-lg">WhatsApp</span>
       </button>
     </div>
   );

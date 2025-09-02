@@ -1,3 +1,4 @@
+
 'use client';
 import { useState, useEffect } from 'react';
 
@@ -89,67 +90,69 @@ export default function ServiceDetails() {
   }, []);
 
   return (
-    <section id="service-details" className="py-20 bg-gray-50">
+    <section id="service-details" className="py-12 md:py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6">
             Detaylı Hizmet Açıklamaları
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-2">
             Her hizmetimiz için sunduğumuz kapsamlı çözümleri keşfedin
           </p>
         </div>
 
-        <div className="space-y-16">
+        <div className="space-y-12 md:space-y-16">
           {services.map((service, index) => (
             <div
               key={service.id}
               data-service-id={service.id}
-              className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-12 ${
+              className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-8 lg:gap-12 ${
                 visibleServices.includes(service.id) 
                   ? 'opacity-100 translate-y-0' 
                   : 'opacity-0 translate-y-8'
               } transition-all duration-700`}
             >
-              <div className="lg:w-1/2">
+              <div className="w-full lg:w-1/2">
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-80 object-cover rounded-2xl shadow-xl"
+                  className="w-full h-64 md:h-80 object-cover rounded-2xl shadow-xl"
                 />
               </div>
               
-              <div className="lg:w-1/2 space-y-6">
-                <div className="flex items-center space-x-4">
-                  <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg">
-                    <i className={`${service.icon} text-white text-2xl`}></i>
+              <div className="w-full lg:w-1/2 space-y-4 md:space-y-6 px-2">
+                <div className="flex flex-col sm:flex-row sm:items-center space-y-3 sm:space-y-0 sm:space-x-4">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg mx-auto sm:mx-0">
+                    <i className={`${service.icon} text-white text-xl sm:text-2xl`}></i>
                   </div>
-                  <h3 className="text-3xl font-bold text-gray-900">
+                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 text-center sm:text-left">
                     {service.title}
                   </h3>
                 </div>
                 
-                <p className="text-lg text-gray-600 leading-relaxed">
+                <p className="text-base md:text-lg text-gray-600 leading-relaxed text-center sm:text-left">
                   {service.description}
                 </p>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-3">
                   {service.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-center space-x-3">
-                      <div className="w-5 h-5 flex items-center justify-center text-green-500">
-                        <i className="ri-check-line text-lg"></i>
+                    <div key={featureIndex} className="flex items-center space-x-2 md:space-x-3">
+                      <div className="w-4 h-4 md:w-5 md:h-5 flex items-center justify-center text-green-500 flex-shrink-0">
+                        <i className="ri-check-line text-sm md:text-lg"></i>
                       </div>
-                      <span className="text-gray-700">{feature}</span>
+                      <span className="text-sm md:text-base text-gray-700">{feature}</span>
                     </div>
                   ))}
                 </div>
                 
-                <button 
-                  onClick={() => window.location.href = '/iletisim'}
-                  className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white py-3 px-8 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg whitespace-nowrap cursor-pointer"
-                >
-                  Bu Hizmet İçin İletişime Geç
-                </button>
+                <div className="pt-2">
+                  <button 
+                    onClick={() => window.open('tel:+905350786101', '_self')}
+                    className="w-full sm:w-auto bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white py-3 px-6 md:px-8 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg whitespace-nowrap cursor-pointer text-sm md:text-base"
+                  >
+                    Bu Hizmet İçin İletişime Geç
+                  </button>
+                </div>
               </div>
             </div>
           ))}

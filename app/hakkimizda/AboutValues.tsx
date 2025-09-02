@@ -100,7 +100,7 @@ export default function AboutValues() {
             Teknolojik ihtiyaçlarınız için güvenilir çözüm ortağınız olalım.
           </p>
           <button 
-            onClick={() => window.location.href = '/iletisim'}
+            onClick={() => window.open('tel:+905350786101', '_self')}
             className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg whitespace-nowrap cursor-pointer"
           >
             İletişime Geçin

@@ -7,27 +7,27 @@ export default function ContactInfo() {
       id: 1,
       title: 'Telefon',
       icon: 'ri-phone-fill',
-      value: '+90 555 123 45 67',
+      value: '+90 535 078 61 01',
       description: '7/24 acil destek hattı',
-      action: () => window.open('tel:+905551234567', '_self'),
+      action: () => window.open('tel:+905350786101', '_self'),
       color: 'blue'
     },
     {
       id: 2,
       title: 'WhatsApp',
       icon: 'ri-whatsapp-fill',
-      value: '+90 555 123 45 67',
+      value: '+90 535 078 61 01',
       description: 'Anında mesajlaşma',
-      action: () => window.open('https://wa.me/905551234567', '_blank'),
+      action: () => window.open('https://wa.me/905350786101', '_blank'),
       color: 'green'
     },
     {
       id: 3,
       title: 'E-posta',
       icon: 'ri-mail-fill',
-      value: 'info@bayraktarbilgisayar.com',
+      value: 'saidbayraktar9@gmail.com',
       description: 'Detaylı projeler için',
-      action: () => window.open('mailto:info@bayraktarbilgisayar.com', '_self'),
+      action: () => window.open('mailto:saidbayraktar9@gmail.com', '_self'),
       color: 'purple'
     },
     {
@@ -42,8 +42,7 @@ export default function ContactInfo() {
   ];
 
   const workingHours = [
-    { day: 'Pazartesi - Cuma', hours: '09:00 - 18:00' },
-    { day: 'Cumartesi', hours: '10:00 - 16:00' },
+    { day: 'Pazartesi - Cumartesi', hours: '08:00 - 19:00' },
     { day: 'Pazar', hours: 'Acil durumlar için' }
   ];
 
@@ -150,7 +149,7 @@ export default function ContactInfo() {
               Sosyal Medyada Takip Edin
             </h3>
             <div className="flex justify-center space-x-4">
-              <a href="#" className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors cursor-pointer">
+              <a href="https://www.facebook.com/profile.php?id=61577426884062" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors cursor-pointer">
                 <i className="ri-facebook-fill text-white"></i>
               </a>
               <a href="#" className="w-12 h-12 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors cursor-pointer">
@@ -159,7 +158,7 @@ export default function ContactInfo() {
               <a href="#" className="w-12 h-12 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-800 transition-colors cursor-pointer">
                 <i className="ri-linkedin-fill text-white"></i>
               </a>
-              <a href="#" className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition-colors cursor-pointer">
+              <a href="https://instagram.com/bayraktaryazilim3d" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition-colors cursor-pointer">
                 <i className="ri-instagram-fill text-white"></i>
               </a>
             </div>

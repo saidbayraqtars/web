@@ -1,3 +1,4 @@
+
 'use client';
 import { useEffect, useState } from 'react';
 
@@ -25,26 +26,26 @@ export default function ServicesHero() {
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 
-            className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight"
+            className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight"
             style={{ transform: `translateY(${scrollY * 0.1}px)` }}
           >
             Teknoloji Hizmetlerimiz
           </h1>
-          <p className="text-xl md:text-2xl text-blue-200 mb-8 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl md:text-2xl text-blue-200 mb-6 md:mb-8 leading-relaxed max-w-3xl mx-auto px-2">
             15 yıllık deneyimimizle sunduğumuz kapsamlı teknoloji çözümleri. 
             Her ihtiyacınız için uzman ekibimizle yanınızdayız.
           </p>
           
-          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center space-y-3 sm:space-y-0 sm:space-x-4 px-4">
             <button 
               onClick={() => document.getElementById('service-details')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 whitespace-nowrap cursor-pointer"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 whitespace-nowrap cursor-pointer w-full sm:w-auto"
             >
               Detayları İncele
             </button>
             <button 
               onClick={() => window.location.href = '/iletisim'}
-              className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 whitespace-nowrap cursor-pointer"
+              className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 whitespace-nowrap cursor-pointer w-full sm:w-auto"
             >
               Hemen İletişime Geç
             </button>

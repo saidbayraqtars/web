@@ -1,4 +1,3 @@
-
 'use client';
 import Link from 'next/link';
 
@@ -18,7 +17,7 @@ export default function Footer() {
               Bilgisayar tamiri, yazılım geliştirme ve otomasyon sistemlerinde uzmanız.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors cursor-pointer">
+              <a href="https://www.facebook.com/profile.php?id=61577426884062" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors cursor-pointer">
                 <i className="ri-facebook-fill"></i>
               </a>
               <a href="#" className="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors cursor-pointer">
@@ -27,7 +26,7 @@ export default function Footer() {
               <a href="#" className="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-800 transition-colors cursor-pointer">
                 <i className="ri-linkedin-fill"></i>
               </a>
-              <a href="#" className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition-colors cursor-pointer">
+              <a href="https://instagram.com/bayraktaryazilim3d" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition-colors cursor-pointer">
                 <i className="ri-instagram-fill"></i>
               </a>
             </div>
@@ -47,14 +46,16 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-xl font-bold mb-6">Kurumsal</h3>
-            <ul className="space-y-3 text-gray-400">
-              <li><Link href="/hakkimizda" className="hover:text-white transition-colors">Hakkımızda</Link></li>
-              <li><a href="#" className="hover:text-white transition-colors cursor-pointer">Kariyer</a></li>
-              <li><a href="#" className="hover:text-white transition-colors cursor-pointer">Blog</a></li>
-              <li><a href="#" className="hover:text-white transition-colors cursor-pointer">Gizlilik Politikası</a></li>
-              <li><a href="#" className="hover:text-white transition-colors cursor-pointer">Kullanım Şartları</a></li>
-            </ul>
+            <div>
+              <h3 className="text-white font-semibold mb-4">Kurumsal</h3>
+              <ul className="space-y-2">
+                <li><Link href="/hakkimizda" className="hover:text-white transition-colors cursor-pointer">Hakkımızda</Link></li>
+                <li><Link href="/kariyer" className="hover:text-white transition-colors cursor-pointer">Kariyer</Link></li>
+                <li><Link href="/blog" className="hover:text-white transition-colors cursor-pointer">Blog</Link></li>
+                <li><Link href="/gizlilik-politikasi" className="hover:text-white transition-colors cursor-pointer">Gizlilik Politikası</Link></li>
+                <li><a href="#" className="hover:text-white transition-colors cursor-pointer">Kullanım Şartları</a></li>
+              </ul>
+            </div>
           </div>
 
           <div>
@@ -64,13 +65,13 @@ export default function Footer() {
                 <div className="w-5 h-5 flex items-center justify-center">
                   <i className="ri-phone-fill text-blue-400"></i>
                 </div>
-                <span>+90 555 123 45 67</span>
+                <span>+90 535 078 61 01</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-5 h-5 flex items-center justify-center">
                   <i className="ri-mail-fill text-blue-400"></i>
                 </div>
-                <span>info@bayraktarbilgisayar.com</span>
+                <span>saidbayraktar9@gmail.com</span>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-5 h-5 flex items-center justify-center mt-0.5">
@@ -85,7 +86,10 @@ export default function Footer() {
                 <div className="w-5 h-5 flex items-center justify-center">
                   <i className="ri-time-fill text-blue-400"></i>
                 </div>
-                <span>Pzt-Cum: 09:00-18:00</span>
+                <div>
+                  <p>Pzt-Cmt: 08:00-19:00</p>
+                  <p>Pazar: Acil Durum</p>
+                </div>
               </div>
             </div>
           </div>

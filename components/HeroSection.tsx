@@ -30,6 +30,10 @@ export default function HeroSection() {
     setParticles(particleArray);
   }, []);
 
+  const handleWhatsApp = () => {
+    window.open('https://wa.me/905350786101?text=Merhaba, hizmetleriniz hakkında bilgi almak istiyorum.', '_blank');
+  };
+
   return (
     <section 
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
@@ -76,18 +80,21 @@ export default function HeroSection() {
             teknolojik çözümlerinizde güvenilir partneriniz. Hızlı, kaliteli ve uygun fiyatlı hizmet garantisi.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8">
             <button 
               onClick={() => window.location.href = '/hizmetler'}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 whitespace-nowrap cursor-pointer"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-12 py-5 rounded-full text-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 whitespace-nowrap cursor-pointer"
             >
               Hizmetlerimizi Keşfedin
             </button>
             <button 
-              onClick={() => window.location.href = '/iletisim'}
-              className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 whitespace-nowrap cursor-pointer"
+              onClick={handleWhatsApp}
+              className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-12 py-5 rounded-full text-xl font-semibold transition-all duration-300 transform hover:scale-105 whitespace-nowrap cursor-pointer flex items-center space-x-3"
             >
-              Ücretsiz Danışmanlık
+              <div className="w-6 h-6 flex items-center justify-center">
+                <i className="ri-whatsapp-fill text-2xl"></i>
+              </div>
+              <span>WhatsApp</span>
             </button>
           </div>
         </div>
