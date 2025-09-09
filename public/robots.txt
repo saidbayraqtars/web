@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Allow: /hakkimizda
+Allow: /hizmetler
+Allow: /iletisim
+Allow: /blog
+Disallow: /kariyer
+Disallow: /gizlilik-politikasi
+
+Sitemap: https://example.com/sitemap.xml
